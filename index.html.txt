@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Wearcrafted</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenido a Wearcrafted</h1>
+    <p>Tu tienda de ropa personalizada está en construcción.</p>
+
+    <button onclick="saludar()">Hacé clic aquí</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
