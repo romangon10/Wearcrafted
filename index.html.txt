@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Wearcrafted</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WearCrafted - Bordados y Ropa Personalizada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400?text=WearCrafted') center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .product {
+      display: inline-block;
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 250px;
+      background-color: white;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenido a Wearcrafted</h1>
-    <p>Tu tienda de ropa personalizada está en construcción.</p>
+  <header>
+    <h1>WearCrafted</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#personaliza">Personaliza</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-    <button onclick="saludar()">Hacé clic aquí</button>
+  <div class="hero" id="inicio">
+    Diseña tu estilo. Bordado con pasión.
+  </div>
 
-    <script src="script.js"></script>
+  <div class="section" id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Remera" alt="Remera personalizada">
+      <h3>Remera Bordada</h3>
+      <p>Desde $25</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Buzo" alt="Buzo personalizado">
+      <h3>Buzo Personalizado</h3>
+      <p>Desde $40</p>
+    </div>
+  </div>
+
+  <div class="section" id="personaliza">
+    <h2>Personalizá tu prenda</h2>
+    <form>
+      <label>Nombre o diseño:<br>
+        <input type="text" name="diseño" required>
+      </label><br><br>
+      <label>Tipo de prenda:
+        <select name="prenda">
+          <option>Remera</option>
+          <option>Buzo</option>
+        </select>
+      </label><br><br>
+      <label>Color:<br>
+        <input type="color" name="color">
+      </label><br><br>
+      <label>Subí tu diseño (opcional):<br>
+        <input type="file" name="imagen">
+      </label><br><br>
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </div>
+
+  <div class="section" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>WearCrafted nace con el objetivo de ofrecer prendas únicas, con bordados personalizados hechos con dedicación y estilo propio.</p>
+  </div>
+
+  <div class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: contacto@wearcrafted.com</p>
+    <p>Instagram: @wearcrafted</p>
+  </div>
+
+  <footer>
+    &copy; 2025 WearCrafted. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
